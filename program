@@ -1,0 +1,19 @@
+using System;
+
+namespace Hypotenuse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sideA, sideB, hypotenuse;
+            Console.Write("Side A : ");
+            sideA = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Side B : ");
+            sideB = Convert.ToDouble(Console.ReadLine());
+            hypotenuse = Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2));
+            Console.WriteLine("Hypotenuse = " + hypotenuse);
+            Console.ReadKey();
+        }
+    }
+}
